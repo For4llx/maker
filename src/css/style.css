@@ -2,7 +2,6 @@
   font-family: "Manrope", sans-serif;
   @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
 }
-
 * {
   font-family: "Manrope", sans-serif;
   margin: 0;
@@ -22,5 +21,7 @@ button {
 }
 
 body {
-  background-color: $secondary-color-2;
+  background-color: #080c21;
 }
+
+/*# sourceMappingURL=style.css.map */
