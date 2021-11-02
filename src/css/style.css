@@ -6,6 +6,7 @@
   font-family: "Manrope", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 li {
@@ -22,6 +23,63 @@ button {
 
 body {
   background-color: #080c21;
+  background-image: url("../assets/layout/Desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header__title {
+  width: 77.1%;
+  margin-top: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .header__title {
+    width: 89.9%;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__title {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+}
+
+.layout-1 {
+  height: 42rem;
+  display: flex;
+  justify-content: center;
+  /*1:Gauche, 2:Milieu, 3:Droite, 4:Scroll-icon */
+  background-image: url("../assets/illustration-hero-left.svg"), url("../assets/bg-hero-squiggle.svg"), url("../assets/illustration-hero-right.svg"), url("../assets/icon-scroll.svg");
+  background-repeat: no-repeat;
+  background-position-x: -53px, center, 1104px, center;
+  background-position-y: 104px, 91px, 113px, 450px;
+}
+.layout-1__container {
+  width: 37%;
+  text-align: center;
+  margin-top: 11rem;
+}
+.layout-1__title {
+  margin-bottom: 1.5rem;
+  color: white;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+}
+.layout-1__emphase {
+  color: #3eeae7;
+}
+.layout-1__body {
+  color: #767f98;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

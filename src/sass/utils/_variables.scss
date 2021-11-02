@@ -6,3 +6,8 @@ $secondary-color-1: hsl(0, 0, 100);
 $secondary-color-2: hsl(230, 60, 8);
 
 $error: hsl(343, 100, 58);
+
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+);

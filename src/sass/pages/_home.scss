@@ -1,0 +1,32 @@
+.layout-1 {
+  height: 42rem;
+  display: flex;
+  justify-content: center;
+  /*1:Gauche, 2:Milieu, 3:Droite, 4:Scroll-icon */
+  background-image: url("../assets/illustration-hero-left.svg"),
+    url("../assets/bg-hero-squiggle.svg"),
+    url("../assets/illustration-hero-right.svg"),
+    url("../assets/icon-scroll.svg");
+  background-repeat: no-repeat;
+  background-position-x: -53px, center, 1104px, center;
+  background-position-y: 104px, 91px, 113px, 450px;
+
+  &__container {
+    width: 37%;
+    text-align: center;
+    margin-top: 11rem;
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+    color: white;
+    @include title-1;
+  }
+  &__emphase {
+    color: $primary-color-1;
+  }
+  &__body {
+    color: $primary-color-3;
+    @include body;
+  }
+}

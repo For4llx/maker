@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: center;
+  &__title {
+    width: 77.1%;
+    margin-top: 5rem;
+  }
+  @include tablet {
+    &__title {
+      width: 89.9%;
+      margin-top: 3rem;
+    }
+  }
+  @include mobile {
+    &__title {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+  }
+}
