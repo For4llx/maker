@@ -1,26 +1,33 @@
 .layout-1 {
-  height: 42rem;
+  margin-top: 5.5rem;
+  padding-bottom: 5.5rem;
   display: flex;
   justify-content: center;
-  /*1:Gauche, 2:Milieu, 3:Droite, 4:Scroll-icon */
   background-image: url("../assets/illustration-hero-left.svg"),
     url("../assets/bg-hero-squiggle.svg"),
-    url("../assets/illustration-hero-right.svg"),
-    url("../assets/icon-scroll.svg");
-  background-repeat: no-repeat;
-  background-position-x: -53px, center, 1104px, center;
-  background-position-y: 104px, 91px, 113px, 450px;
+    url("../assets/illustration-hero-right.svg");
+  /*1:hero-left, 2:squiggle 3:hero-right */
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position-x: -5.1%, center, 105.7%;
+  background-position-y: center, 0, center;
+  background-size: 28.5%, 38% 76%, 27.5%;
 
   &__container {
+    padding-top: 5.5rem;
+    padding-bottom: 6.6rem;
     width: 37%;
+    height: max-content;
+    background-image: url("../assets/icon-scroll.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
     text-align: center;
-    margin-top: 11rem;
   }
 
   &__title {
     margin-bottom: 1.5rem;
     color: white;
-    @include title-1;
+    @include large-title;
   }
   &__emphase {
     color: $primary-color-1;
@@ -28,5 +35,36 @@
   &__body {
     color: $primary-color-3;
     @include body;
+  }
+  @include tablet {
+    margin-top: 4.5rem;
+    padding-bottom: 3rem;
+    background-position-x: -35.9%, center, 139.7%;
+    background-position-y: center, 28px, center;
+    background-size: 40.2%, 51% 78%, 42.2%;
+
+    &__container {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2.8rem;
+      padding-bottom: 5rem;
+    }
+    &__title {
+      width: 75%;
+      margin-bottom: 1.5rem;
+      @include small-title;
+    }
+  }
+  @include mobile {
+    margin-top: 3.5rem;
+    background-position-x: left, 0, 120%;
+    background-position-y: 2px, 0, top;
+    background-size: 54.3%, 0, 55%;
+    &__container {
+      padding-top: 17.5rem;
+      width: 88%;
+    }
   }
 }

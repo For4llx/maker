@@ -23,7 +23,7 @@ button {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Desktop.jpg");
+  background-image: url("../assets/layout/Mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
@@ -51,19 +51,27 @@ body {
 }
 
 .layout-1 {
-  height: 42rem;
+  margin-top: 5.5rem;
+  padding-bottom: 5.5rem;
   display: flex;
   justify-content: center;
-  /*1:Gauche, 2:Milieu, 3:Droite, 4:Scroll-icon */
-  background-image: url("../assets/illustration-hero-left.svg"), url("../assets/bg-hero-squiggle.svg"), url("../assets/illustration-hero-right.svg"), url("../assets/icon-scroll.svg");
-  background-repeat: no-repeat;
-  background-position-x: -53px, center, 1104px, center;
-  background-position-y: 104px, 91px, 113px, 450px;
+  background-image: url("../assets/illustration-hero-left.svg"), url("../assets/bg-hero-squiggle.svg"), url("../assets/illustration-hero-right.svg");
+  /*1:hero-left, 2:squiggle 3:hero-right */
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position-x: -5.1%, center, 105.7%;
+  background-position-y: center, 0, center;
+  background-size: 28.5%, 38% 76%, 27.5%;
 }
 .layout-1__container {
+  padding-top: 5.5rem;
+  padding-bottom: 6.6rem;
   width: 37%;
+  height: max-content;
+  background-image: url("../assets/icon-scroll.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
   text-align: center;
-  margin-top: 11rem;
 }
 .layout-1__title {
   margin-bottom: 1.5rem;
@@ -80,6 +88,42 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
+}
+@media screen and (max-width: 768px) {
+  .layout-1 {
+    margin-top: 4.5rem;
+    padding-bottom: 3rem;
+    background-position-x: -35.9%, center, 139.7%;
+    background-position-y: center, 28px, center;
+    background-size: 40.2%, 51% 78%, 42.2%;
+  }
+  .layout-1__container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.8rem;
+    padding-bottom: 5rem;
+  }
+  .layout-1__title {
+    width: 75%;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .layout-1 {
+    margin-top: 3.5rem;
+    background-position-x: left, 0, 120%;
+    background-position-y: 2px, 0, top;
+    background-size: 54.3%, 0, 55%;
+  }
+  .layout-1__container {
+    padding-top: 17.5rem;
+    width: 88%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
