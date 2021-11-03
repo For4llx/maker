@@ -1,4 +1,11 @@
+.home {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .layout-1 {
+  width: 100%;
   margin-top: 5.5rem;
   padding-bottom: 5.5rem;
   display: flex;
@@ -66,5 +73,65 @@
       padding-top: 17.5rem;
       width: 88%;
     }
+  }
+}
+.layout-2 {
+  width: 76%;
+  margin-top: 11.4rem;
+  position: relative;
+  right: 7px;
+  &__ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    width: 22%;
+    &:nth-child(even) {
+      margin-top: 3rem;
+    }
+  }
+  &__perk {
+    &::before {
+      content: "";
+      display: block;
+      border-radius: 3rem;
+      background-repeat: no-repeat;
+      background-color: $primary-color-2;
+      background-size: 50%;
+      background-position: center;
+      height: 10.3rem;
+      width: 66%;
+    }
+    &--passions {
+      &::before {
+        background-image: url("../assets/illustration-passions.svg");
+      }
+    }
+    &--financial {
+      &::before {
+        background-image: url("../assets/illustration-financial-freedom.svg");
+      }
+    }
+    &--lifestyle {
+      &::before {
+        background-image: url("../assets/illustration-lifestyle.svg");
+      }
+    }
+    &--remote {
+      &::before {
+        background-image: url("../assets/illustration-work-anywhere.svg");
+        background-size: 65%;
+      }
+    }
+  }
+  &__title {
+    margin-top: 3rem;
+    color: white;
+    @include extra-small-title;
+  }
+  &__body {
+    margin-top: 1.5rem;
+    color: $primary-color-3;
+    @include body;
   }
 }
