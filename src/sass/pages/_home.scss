@@ -124,8 +124,10 @@
       }
     }
   }
-  &__title {
+  &__container {
     margin-top: 3rem;
+  }
+  &__title {
     color: white;
     @include extra-small-title;
   }
@@ -133,5 +135,59 @@
     margin-top: 1.5rem;
     color: $primary-color-3;
     @include body;
+  }
+  @include tablet {
+    margin-top: 6.8rem;
+    right: -4px;
+    &__ul {
+      flex-direction: column;
+    }
+    &__list {
+      width: 90%;
+      margin-bottom: 2.5rem;
+      &:nth-child(odd) {
+        align-self: flex-end;
+      }
+      &:nth-child(even) {
+        margin-top: inherit;
+      }
+    }
+    &__perk {
+      display: flex;
+      justify-content: space-between;
+      &::before {
+        height: 7.8rem;
+        width: 23%;
+      }
+      &--passions {
+        &::before {
+          background-image: url("../assets/illustration-passions.svg");
+        }
+      }
+      &--financial {
+        &::before {
+          background-image: url("../assets/illustration-financial-freedom.svg");
+        }
+      }
+      &--lifestyle {
+        &::before {
+          background-image: url("../assets/illustration-lifestyle.svg");
+          height: 7.7rem;
+        }
+      }
+      &--remote {
+        &::before {
+          background-image: url("../assets/illustration-work-anywhere.svg");
+          height: 7.75rem;
+        }
+      }
+    }
+    &__container {
+      width: 66.8%;
+      margin-top: 1.2rem;
+    }
+    &__body {
+      margin-top: 0.7rem;
+    }
   }
 }

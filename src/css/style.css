@@ -23,7 +23,7 @@ button {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Desktop.jpg");
+  background-image: url("../assets/layout/Tablet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
@@ -173,8 +173,10 @@ body {
   background-image: url("../assets/illustration-work-anywhere.svg");
   background-size: 65%;
 }
-.layout-2__title {
+.layout-2__container {
   margin-top: 3rem;
+}
+.layout-2__title {
   color: white;
   font-weight: 800;
   font-size: 18px;
@@ -186,6 +188,54 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
+}
+@media screen and (max-width: 768px) {
+  .layout-2 {
+    margin-top: 6.8rem;
+    right: -4px;
+  }
+  .layout-2__ul {
+    flex-direction: column;
+  }
+  .layout-2__list {
+    width: 90%;
+    margin-bottom: 2.5rem;
+  }
+  .layout-2__list:nth-child(odd) {
+    align-self: flex-end;
+  }
+  .layout-2__list:nth-child(even) {
+    margin-top: inherit;
+  }
+  .layout-2__perk {
+    display: flex;
+    justify-content: space-between;
+  }
+  .layout-2__perk::before {
+    height: 7.8rem;
+    width: 23%;
+  }
+  .layout-2__perk--passions::before {
+    background-image: url("../assets/illustration-passions.svg");
+  }
+  .layout-2__perk--financial::before {
+    background-image: url("../assets/illustration-financial-freedom.svg");
+  }
+  .layout-2__perk--lifestyle::before {
+    background-image: url("../assets/illustration-lifestyle.svg");
+    height: 7.7rem;
+  }
+  .layout-2__perk--remote::before {
+    background-image: url("../assets/illustration-work-anywhere.svg");
+    height: 7.75rem;
+  }
+  .layout-2__container {
+    width: 66.8%;
+    margin-top: 1.2rem;
+  }
+  .layout-2__body {
+    margin-top: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
