@@ -2,9 +2,9 @@ import React from "react";
 
 function Home() {
   return (
-    <main>
-      <div>
-        <article className="paragraph paragraph--centered">
+    <main className="home">
+      <div className="layout-1">
+        <article className="paragraph paragraph--centered layout-1__paragraph">
           <h2 className="paragraph__title paragraph__title--large">
             Get paid for the work you{" "}
             <span className="paragraph__emphase">love</span> to do.

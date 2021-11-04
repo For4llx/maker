@@ -56,6 +56,7 @@ body {
   color: #3eeae7;
 }
 .paragraph__body {
+  margin-top: 1.5rem;
   color: #767f98;
   font-weight: 500;
   font-size: 15px;
@@ -90,9 +91,65 @@ body {
 }
 
 .home {
+  margin-top: 6.5rem;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.layout-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.layout-1::before {
+  content: "";
+  position: relative;
+  left: -75px;
+  display: block;
+  height: 29rem;
+  width: 29rem;
+  background-image: url("../assets/illustration-hero-left.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.layout-1::after {
+  content: "";
+  position: relative;
+  right: -89px;
+  top: 6px;
+  display: block;
+  height: 28rem;
+  width: 29rem;
+  background-image: url("../assets/illustration-hero-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.layout-1__paragraph {
+  position: relative;
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 38%;
+}
+.layout-1__paragraph::before {
+  content: "";
+  position: absolute;
+  top: -88px;
+  z-index: -1;
+  display: block;
+  height: 24rem;
+  width: 100%;
+  background-image: url("../assets/bg-hero-squiggle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.layout-1__paragraph::after {
+  content: url("../assets/icon-scroll.svg");
+  margin-top: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

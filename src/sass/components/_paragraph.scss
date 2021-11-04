@@ -22,6 +22,7 @@
     color: $primary-color-1;
   }
   &__body {
+    margin-top: 1.5rem;
     color: $primary-color-3;
     @include body;
   }
