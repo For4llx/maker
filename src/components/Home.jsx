@@ -20,7 +20,9 @@ function Home() {
         <ul>
           <li>
             <article>
-              <h3 className="paragraph__title">Indulge your passions</h3>
+              <h3 className="paragraph__title paragraph__title--xsmall">
+                Indulge your passions
+              </h3>
               <p className="paragraph__body">
                 Your passions shouldn't be just for the weekend. Earn a living
                 doing what you love.
@@ -29,7 +31,9 @@ function Home() {
           </li>
           <li>
             <article>
-              <h3 className="paragraph__title">Gain financial freedom</h3>
+              <h3 className="paragraph__title paragraph__title--xsmall">
+                Gain financial freedom
+              </h3>
               <p className="paragraph__body">
                 Start making money work for you. There’s nothing quite like
                 earning while you sleep.
@@ -38,7 +42,9 @@ function Home() {
           </li>
           <li>
             <article>
-              <h3 className="paragraph__title">Choose your lifestyle</h3>
+              <h3 className="paragraph__title paragraph__title--xsmall">
+                Choose your lifestyle
+              </h3>
               <p className="paragraph__body">
                 Own your daily schedule. Fancy a lie-in? Go for it! Take charge
                 of your week.
@@ -47,7 +53,9 @@ function Home() {
           </li>
           <li>
             <article>
-              <h3 className="paragraph__title">Work from anywhere</h3>
+              <h3 className="paragraph__title paragraph__title--xsmall">
+                Work from anywhere
+              </h3>
               <p className="paragraph__body">
                 Selling online means not being pinned down. Want to work AND
                 travel? Go for it!
@@ -58,7 +66,9 @@ function Home() {
       </div>
       <div>
         <article className="paragraph paragraph--centered">
-          <h2 className="paragraph__title">Our pricing plans</h2>
+          <h2 className="paragraph__title paragraph__title-small">
+            Our pricing plans
+          </h2>
           <p className="paragraph__body">
             We only make money when our creators make money. Our plans are
             always affordable, and it’s completely free to get started.
@@ -67,7 +77,9 @@ function Home() {
         <div>
           <div>
             <article>
-              <h3 className="paragraph__title">Dip your toe</h3>
+              <h3 className="paragraph__title paragraph__title--xsmall">
+                Dip your toe
+              </h3>
               <p className="paragraph__body">
                 Just getting started? No problem at all! Our free plan will take
                 you a long way.
@@ -85,7 +97,9 @@ function Home() {
           </div>
           <div>
             <article>
-              <h3 className="paragraph__title">Dive right in</h3>
+              <h3 className="paragraph__title paragraph__title--xsmall">
+                Dive right in
+              </h3>
               <p className="paragraph__body">
                 Ready for the big time? Our paid plan will help you take your
                 business to the next level.
