@@ -23,7 +23,7 @@ button {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Desktop.jpg");
+  background-image: url("../assets/layout/Tablet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
@@ -91,13 +91,13 @@ body {
 }
 
 .home {
-  margin-top: 6.5rem;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
 .layout-1 {
+  margin-top: 6.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -150,6 +150,37 @@ body {
 .layout-1__paragraph::after {
   content: url("../assets/icon-scroll.svg");
   margin-top: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .layout-1 {
+    margin-top: 4.3rem;
+  }
+  .layout-1::before {
+    left: 0px;
+    height: 22rem;
+    width: 33rem;
+  }
+  .layout-1::after {
+    right: 1px;
+    top: -1px;
+    height: 22rem;
+    width: 33rem;
+  }
+  .layout-1__paragraph {
+    margin-top: 3rem;
+    width: 62%;
+  }
+  .layout-1__paragraph::before {
+    top: -233px;
+    height: 44rem;
+    width: 86%;
+  }
+  .layout-1__paragraph::after {
+    margin-top: 2rem;
+  }
+  .layout-1__title {
+    width: 85%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

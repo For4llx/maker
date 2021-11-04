@@ -1,10 +1,10 @@
 .home {
-  margin-top: 6.5rem;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 .layout-1 {
+  margin-top: 6.5rem;
   display: flex;
   justify-content: space-between;
   &::before {
@@ -55,6 +55,35 @@
     &::after {
       content: url("../assets/icon-scroll.svg");
       margin-top: 4rem;
+    }
+  }
+  @include tablet {
+    margin-top: 4.3rem;
+    &::before {
+      left: 0px;
+      height: 22rem;
+      width: 33rem;
+    }
+    &::after {
+      right: 1px;
+      top: -1px;
+      height: 22rem;
+      width: 33rem;
+    }
+    &__paragraph {
+      margin-top: 3rem;
+      width: 62%;
+      &::before {
+        top: -233px;
+        height: 44rem;
+        width: 86%;
+      }
+      &::after {
+        margin-top: 2rem;
+      }
+    }
+    &__title {
+      width: 85%;
     }
   }
 }

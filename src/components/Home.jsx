@@ -4,8 +4,8 @@ function Home() {
   return (
     <main className="home">
       <div className="layout-1">
-        <article className="paragraph paragraph--centered layout-1__paragraph">
-          <h2 className="paragraph__title paragraph__title--large">
+        <article className="layout-1__paragraph paragraph paragraph--centered">
+          <h2 className=" layout-1__title paragraph__title paragraph__title--large">
             Get paid for the work you{" "}
             <span className="paragraph__emphase">love</span> to do.
           </h2>
