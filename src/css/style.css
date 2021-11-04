@@ -23,7 +23,7 @@ button {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Tablet.jpg");
+  background-image: url("../assets/layout/Mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
@@ -180,6 +180,37 @@ body {
   }
   .layout-1__title {
     width: 85%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .layout-1 {
+    margin-top: 3.5rem;
+    position: relative;
+  }
+  .layout-1__paragraph {
+    margin-top: 17.5rem;
+    width: 100%;
+  }
+  .layout-1__paragraph::before {
+    background-image: inherit;
+  }
+  .layout-1__title {
+    width: 65%;
+  }
+  .layout-1__body {
+    width: 90%;
+  }
+  .layout-1::before {
+    position: absolute;
+    left: 0px;
+    height: 14.5rem;
+    width: 54%;
+  }
+  .layout-1::after {
+    position: absolute;
+    right: -36px;
+    height: 14.5rem;
+    width: 56%;
   }
 }
 
