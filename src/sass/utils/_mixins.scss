@@ -9,22 +9,18 @@
   }
 }
 @mixin large-title {
-  font-weight: 800;
   font-size: 48px;
   line-height: 56px;
 }
 @mixin medium-title {
-  font-weight: 800;
   font-size: 40px;
   line-height: 55px;
 }
 @mixin small-title {
-  font-weight: 800;
   font-size: 32px;
   line-height: 40px;
 }
-@mixin extra-small-title {
-  font-weight: 800;
+@mixin xsmall-title {
   font-size: 18px;
   line-height: 25px;
 }

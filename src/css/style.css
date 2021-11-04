@@ -29,6 +29,45 @@ body {
   opacity: 0.5;
 }
 
+.paragraph--centered {
+  text-align: center;
+}
+.paragraph__title {
+  color: white;
+  font-weight: 800;
+}
+.paragraph__title--large {
+  font-size: 48px;
+  line-height: 56px;
+}
+.paragraph__title--medium {
+  font-size: 40px;
+  line-height: 55px;
+}
+.paragraph__title--small {
+  font-size: 32px;
+  line-height: 40px;
+}
+.paragraph__title--xsmall {
+  font-size: 18px;
+  line-height: 25px;
+}
+.paragraph__emphase {
+  color: #3eeae7;
+}
+.paragraph__body {
+  color: #767f98;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+@media screen and (max-width: 768px) {
+  .paragraph__title--large {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
 .header {
   display: flex;
   justify-content: center;

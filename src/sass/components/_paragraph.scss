@@ -1,0 +1,35 @@
+.paragraph {
+  &--centered {
+    text-align: center;
+  }
+  &__title {
+    color: $secondary-color-1;
+    font-weight: 800;
+    &--large {
+      @include large-title;
+    }
+    &--medium {
+      @include medium-title;
+    }
+    &--small {
+      @include small-title;
+    }
+    &--xsmall {
+      @include xsmall-title;
+    }
+  }
+  &__emphase {
+    color: $primary-color-1;
+  }
+  &__body {
+    color: $primary-color-3;
+    @include body;
+  }
+  @include tablet {
+    &__title {
+      &--large {
+        @include small-title;
+      }
+    }
+  }
+}

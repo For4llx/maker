@@ -4,11 +4,12 @@ function Home() {
   return (
     <main>
       <div>
-        <article>
-          <h2>
-            Get paid for the work you <span>love</span> to do.
+        <article className="paragraph paragraph--centered">
+          <h2 className="paragraph__title paragraph__title--large">
+            Get paid for the work you{" "}
+            <span className="paragraph__emphase">love</span> to do.
           </h2>
-          <p>
+          <p className="paragraph__body">
             The 9-5 grind is so last century. We believe in living life on your
             own terms. Whether you’re looking to escape the rat race or set up a
             side hustle, we’ve got you covered.
@@ -19,8 +20,8 @@ function Home() {
         <ul>
           <li>
             <article>
-              <h3>Indulge your passions</h3>
-              <p>
+              <h3 className="paragraph__title">Indulge your passions</h3>
+              <p className="paragraph__body">
                 Your passions shouldn't be just for the weekend. Earn a living
                 doing what you love.
               </p>
@@ -28,8 +29,8 @@ function Home() {
           </li>
           <li>
             <article>
-              <h3>Gain financial freedom</h3>
-              <p>
+              <h3 className="paragraph__title">Gain financial freedom</h3>
+              <p className="paragraph__body">
                 Start making money work for you. There’s nothing quite like
                 earning while you sleep.
               </p>
@@ -37,8 +38,8 @@ function Home() {
           </li>
           <li>
             <article>
-              <h3>Choose your lifestyle</h3>
-              <p>
+              <h3 className="paragraph__title">Choose your lifestyle</h3>
+              <p className="paragraph__body">
                 Own your daily schedule. Fancy a lie-in? Go for it! Take charge
                 of your week.
               </p>
@@ -46,8 +47,8 @@ function Home() {
           </li>
           <li>
             <article>
-              <h3>Work from anywhere</h3>
-              <p>
+              <h3 className="paragraph__title">Work from anywhere</h3>
+              <p className="paragraph__body">
                 Selling online means not being pinned down. Want to work AND
                 travel? Go for it!
               </p>
@@ -56,9 +57,9 @@ function Home() {
         </ul>
       </div>
       <div>
-        <article>
-          <h2>Our pricing plans</h2>
-          <p>
+        <article className="paragraph paragraph--centered">
+          <h2 className="paragraph__title">Our pricing plans</h2>
+          <p className="paragraph__body">
             We only make money when our creators make money. Our plans are
             always affordable, and it’s completely free to get started.
           </p>
@@ -66,8 +67,8 @@ function Home() {
         <div>
           <div>
             <article>
-              <h3>Dip your toe</h3>
-              <p>
+              <h3 className="paragraph__title">Dip your toe</h3>
+              <p className="paragraph__body">
                 Just getting started? No problem at all! Our free plan will take
                 you a long way.
               </p>
@@ -84,8 +85,8 @@ function Home() {
           </div>
           <div>
             <article>
-              <h3>Dive right in</h3>
-              <p>
+              <h3 className="paragraph__title">Dive right in</h3>
+              <p className="paragraph__body">
                 Ready for the big time? Our paid plan will help you take your
                 business to the next level.
               </p>
