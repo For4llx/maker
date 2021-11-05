@@ -23,7 +23,7 @@ button {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Desktop.jpg");
+  background-image: url("../assets/layout/Tablet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
@@ -251,6 +251,56 @@ body {
 }
 .layout-2__paragraph--remote-icon::before {
   background-image: url("../assets/illustration-work-anywhere.svg");
+}
+@media screen and (max-width: 768px) {
+  .layout-2 {
+    margin-top: 7rem;
+    width: 75%;
+  }
+  .layout-2__ul {
+    flex-direction: column;
+  }
+  .layout-2__list {
+    width: 90%;
+    margin-bottom: 2.5rem;
+  }
+  .layout-2__list:nth-child(even) {
+    margin-top: 0;
+  }
+  .layout-2__list:nth-child(odd) {
+    align-self: flex-end;
+  }
+  .layout-2__paragraph {
+    display: flex;
+    justify-content: space-between;
+  }
+  .layout-2__paragraph::before {
+    height: 7.8rem;
+    width: 23.5%;
+    margin-bottom: 0;
+  }
+  .layout-2__paragraph--passions-icon::before {
+    background-size: 54%;
+  }
+  .layout-2__paragraph--financial-icon::before {
+    height: 7.7rem;
+    background-size: 46%;
+  }
+  .layout-2__paragraph--lifestyle-icon::before {
+    height: 7.75rem;
+    background-size: 49%;
+  }
+  .layout-2__paragraph--remote-icon::before {
+    height: 7.7rem;
+    background-size: 64%;
+  }
+  .layout-2__container-1 {
+    width: 66%;
+    margin-top: 1.1rem;
+  }
+  .layout-2__body {
+    margin-top: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

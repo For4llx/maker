@@ -163,4 +163,60 @@
       }
     }
   }
+  @include tablet {
+    margin-top: 7rem;
+    width: 75%;
+    &__ul {
+      flex-direction: column;
+    }
+    &__list {
+      width: 90%;
+      margin-bottom: 2.5rem;
+      &:nth-child(even) {
+        margin-top: 0;
+      }
+      &:nth-child(odd) {
+        align-self: flex-end;
+      }
+    }
+    &__paragraph {
+      display: flex;
+      justify-content: space-between;
+      &::before {
+        height: 7.8rem;
+        width: 23.5%;
+        margin-bottom: 0;
+      }
+      &--passions-icon {
+        &::before {
+          background-size: 54%;
+        }
+      }
+      &--financial-icon {
+        &::before {
+          height: 7.7rem;
+          background-size: 46%;
+        }
+      }
+      &--lifestyle-icon {
+        &::before {
+          height: 7.75rem;
+          background-size: 49%;
+        }
+      }
+      &--remote-icon {
+        &::before {
+          height: 7.7rem;
+          background-size: 64%;
+        }
+      }
+    }
+    &__container-1 {
+      width: 66%;
+      margin-top: 1.1rem;
+    }
+    &__body {
+      margin-top: 0.7rem;
+    }
+  }
 }
