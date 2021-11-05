@@ -5,6 +5,9 @@
   &__title {
     color: $secondary-color-1;
     font-weight: 800;
+    &--dark {
+      color: $secondary-color-2;
+    }
     &--large {
       @include large-title;
     }

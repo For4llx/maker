@@ -1,0 +1,27 @@
+.perk {
+  &__price {
+    display: flex;
+    align-items: center;
+    @include medium-title;
+  }
+  &__body {
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+  &__ul {
+    margin-top: 1.1rem;
+    position: relative;
+    left: 0.9rem;
+  }
+  &__list {
+    margin-bottom: 0.78rem;
+    padding-left: 0.7rem;
+    @include body;
+    &--dark-theme {
+      list-style-image: url("../assets/icon-check-primary-color-1.svg");
+    }
+    &--light-theme {
+      list-style-image: url("../assets/icon-check-primary-color-2.svg");
+    }
+  }
+}

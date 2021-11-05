@@ -1,0 +1,18 @@
+.plan {
+  border-radius: 0.5rem;
+  height: max-content;
+  &--dark-theme {
+    color: $secondary-color-1;
+    background-color: $primary-color-2;
+  }
+  &--light-theme {
+    color: $secondary-color-2;
+    background-color: $primary-color-1;
+  }
+  &__body {
+    margin-top: 1.2rem;
+  }
+  &__perk {
+    margin-top: 1.5rem;
+  }
+}

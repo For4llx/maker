@@ -72,56 +72,73 @@ function Home() {
           </li>
         </ul>
       </div>
-      <div>
-        <article className="paragraph paragraph--centered">
-          <h2 className="paragraph__title paragraph__title-small">
+      <div className="layout-3">
+        <article className="paragraph layout-3__paragraph paragraph--centered">
+          <h2 className="paragraph__title paragraph__title--small">
             Our pricing plans
           </h2>
-          <p className="paragraph__body">
+          <p className="paragraph__body layout-3__body">
             We only make money when our creators make money. Our plans are
             always affordable, and it’s completely free to get started.
           </p>
         </article>
-        <div>
-          <div>
+        <div className="layout-3__container-1">
+          <div className="plan plan--dark-theme layout-3__plan layout-3__plan--small">
             <article>
               <h3 className="paragraph__title paragraph__title--xsmall">
                 Dip your toe
               </h3>
-              <p className="paragraph__body">
+              <p className="paragraph__body plan__body">
                 Just getting started? No problem at all! Our free plan will take
                 you a long way.
               </p>
             </article>
-            <article>
-              <h3>Free</h3>
-              <ul>
-                <li>Unlimited products</li>
-                <li>Basic analytics</li>
-                <li>Limited marketplace exposure</li>
-                <li>10% fee per transaction</li>
+            <article className="plan__perk">
+              <h3 className="perk__price">Free</h3>
+              <ul className="perk__ul">
+                <li className="perk__list perk__list--dark-theme">
+                  Unlimited products
+                </li>
+                <li className="perk__list perk__list--dark-theme">
+                  Basic analytics
+                </li>
+                <li className="perk__list perk__list--dark-theme">
+                  Limited marketplace exposure
+                </li>
+                <li className="perk__list perk__list--dark-theme">
+                  10% fee per transaction
+                </li>
               </ul>
             </article>
           </div>
-          <div>
+          <div className="plan plan--light-theme layout-3__plan">
             <article>
-              <h3 className="paragraph__title paragraph__title--xsmall">
+              <h3 className="paragraph__title paragraph__title--dark paragraph__title--xsmall">
                 Dive right in
               </h3>
-              <p className="paragraph__body">
+              <p className="paragraph__body plan__body">
                 Ready for the big time? Our paid plan will help you take your
                 business to the next level.
               </p>
             </article>
-            <article>
-              <h3>
-                <span>$25.00</span> /month
+            <article className="plan__perk">
+              <h3 className="perk__price">
+                $25.00{" "}
+                <span className="paragraph__body perk__body">/ month</span>
               </h3>
-              <ul>
-                <li>Custom domain</li>
-                <li>Advanced analytics and reports</li>
-                <li>High marketplace visibility</li>
-                <li>5% fee per transaction</li>
+              <ul className="perk__ul">
+                <li className="perk__list perk__list--light-theme">
+                  Custom domain
+                </li>
+                <li className="perk__list perk__list--light-theme">
+                  Advanced analytics and reports
+                </li>
+                <li className="perk__list perk__list--light-theme">
+                  High marketplace visibility
+                </li>
+                <li className="perk__list perk__list--light-theme">
+                  5% fee per transaction
+                </li>
               </ul>
             </article>
           </div>

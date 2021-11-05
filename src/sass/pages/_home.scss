@@ -253,3 +253,32 @@
     }
   }
 }
+.layout-3 {
+  margin-top: 12.7rem;
+  width: 64%;
+  &__paragraph {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__body {
+    width: 60%;
+  }
+  &__container-1 {
+    margin-top: 6.7rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__plan {
+    padding-left: 2.5rem;
+    padding-top: 3.8rem;
+    padding-right: 2.5rem;
+    padding-bottom: 3rem;
+    &--small {
+      margin-top: 0.8rem;
+      padding-bottom: 2.2rem;
+      padding-top: 3rem;
+    }
+    width: 48.5%;
+  }
+}
