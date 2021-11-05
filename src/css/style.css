@@ -94,6 +94,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .layout-1 {
