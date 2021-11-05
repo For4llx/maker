@@ -23,7 +23,7 @@ button {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Mobile.jpg");
+  background-image: url("../assets/layout/Desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
@@ -213,6 +213,44 @@ body {
     height: 14.5rem;
     width: 56%;
   }
+}
+
+.layout-2 {
+  margin-top: 12.4rem;
+  width: 77%;
+}
+.layout-2__ul {
+  display: flex;
+  justify-content: space-between;
+}
+.layout-2__list {
+  width: 22.9%;
+}
+.layout-2__list:nth-child(even) {
+  margin-top: 3rem;
+}
+.layout-2__paragraph::before {
+  content: "";
+  margin-bottom: 3rem;
+  display: block;
+  height: 10.2rem;
+  width: 63%;
+  border-radius: 3rem;
+  background-color: #093e67;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.layout-2__paragraph--passions-icon::before {
+  background-image: url("../assets/illustration-passions.svg");
+}
+.layout-2__paragraph--financial-icon::before {
+  background-image: url("../assets/illustration-financial-freedom.svg");
+}
+.layout-2__paragraph--lifestyle-icon::before {
+  background-image: url("../assets/illustration-lifestyle.svg");
+}
+.layout-2__paragraph--remote-icon::before {
+  background-image: url("../assets/illustration-work-anywhere.svg");
 }
 
 /*# sourceMappingURL=style.css.map */

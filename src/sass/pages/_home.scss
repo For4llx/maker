@@ -117,3 +117,50 @@
     }
   }
 }
+.layout-2 {
+  margin-top: 12.4rem;
+  width: 77%;
+  &__ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    width: 22.9%;
+    &:nth-child(even) {
+      margin-top: 3rem;
+    }
+  }
+  &__paragraph {
+    &::before {
+      content: "";
+      margin-bottom: 3rem;
+      display: block;
+      height: 10.2rem;
+      width: 63%;
+      border-radius: 3rem;
+      background-color: $primary-color-2;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--passions-icon {
+      &::before {
+        background-image: url("../assets/illustration-passions.svg");
+      }
+    }
+    &--financial-icon {
+      &::before {
+        background-image: url("../assets/illustration-financial-freedom.svg");
+      }
+    }
+    &--lifestyle-icon {
+      &::before {
+        background-image: url("../assets/illustration-lifestyle.svg");
+      }
+    }
+    &--remote-icon {
+      &::before {
+        background-image: url("../assets/illustration-work-anywhere.svg");
+      }
+    }
+  }
+}

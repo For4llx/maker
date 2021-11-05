@@ -16,10 +16,10 @@ function Home() {
           </p>
         </article>
       </div>
-      <div>
-        <ul>
-          <li>
-            <article>
+      <div className="layout-2">
+        <ul className="layout-2__ul">
+          <li className="layout-2__list">
+            <article className="layout-2__paragraph layout-2__paragraph--passions-icon">
               <h3 className="paragraph__title paragraph__title--xsmall">
                 Indulge your passions
               </h3>
@@ -29,8 +29,8 @@ function Home() {
               </p>
             </article>
           </li>
-          <li>
-            <article>
+          <li className="layout-2__list">
+            <article className="layout-2__paragraph layout-2__paragraph--financial-icon">
               <h3 className="paragraph__title paragraph__title--xsmall">
                 Gain financial freedom
               </h3>
@@ -40,8 +40,8 @@ function Home() {
               </p>
             </article>
           </li>
-          <li>
-            <article>
+          <li className="layout-2__list">
+            <article className="layout-2__paragraph layout-2__paragraph--lifestyle-icon">
               <h3 className="paragraph__title paragraph__title--xsmall">
                 Choose your lifestyle
               </h3>
@@ -51,8 +51,8 @@ function Home() {
               </p>
             </article>
           </li>
-          <li>
-            <article>
+          <li className="layout-2__list">
+            <article className="layout-2__paragraph layout-2__paragraph--remote-icon">
               <h3 className="paragraph__title paragraph__title--xsmall">
                 Work from anywhere
               </h3>
