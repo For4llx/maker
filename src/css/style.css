@@ -23,7 +23,7 @@ button {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Desktop.jpg");
+  background-image: url("../assets/layout/Tablet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
@@ -69,6 +69,9 @@ body {
   .paragraph__title--large {
     font-size: 32px;
     line-height: 40px;
+  }
+  .paragraph__title--small {
+    font-size: 24px;
   }
 }
 
@@ -426,6 +429,26 @@ body {
 .layout-3__plan--small {
   padding-bottom: 2.2rem;
   padding-top: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .layout-3 {
+    margin-top: 6rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .layout-3__body {
+    width: 100%;
+  }
+  .layout-3__container-1 {
+    margin-top: 4.9rem;
+    flex-direction: column;
+  }
+  .layout-3__plan {
+    width: 83%;
+    margin-bottom: 4.1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
