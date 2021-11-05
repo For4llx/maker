@@ -104,14 +104,25 @@ body {
 .plan {
   border-radius: 0.5rem;
   height: max-content;
+  position: relative;
 }
 .plan--dark-theme {
   color: white;
   background-color: #093e67;
 }
+.plan--dark-theme:before {
+  content: url("../assets/icon-free.svg");
+  position: absolute;
+  top: -24px;
+}
 .plan--light-theme {
   color: #080c21;
   background-color: #3eeae7;
+}
+.plan--light-theme:before {
+  content: url("../assets/icon-paid.svg");
+  position: absolute;
+  top: -33px;
 }
 .plan__body {
   margin-top: 1.2rem;
@@ -403,6 +414,7 @@ body {
   margin-top: 6.7rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .layout-3__plan {
   padding-left: 2.5rem;
@@ -412,7 +424,6 @@ body {
   width: 48.5%;
 }
 .layout-3__plan--small {
-  margin-top: 0.8rem;
   padding-bottom: 2.2rem;
   padding-top: 3rem;
 }

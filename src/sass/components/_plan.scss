@@ -1,13 +1,24 @@
 .plan {
   border-radius: 0.5rem;
   height: max-content;
+  position: relative;
   &--dark-theme {
     color: $secondary-color-1;
     background-color: $primary-color-2;
+    &:before {
+      content: url("../assets/icon-free.svg");
+      position: absolute;
+      top: -24px;
+    }
   }
   &--light-theme {
     color: $secondary-color-2;
     background-color: $primary-color-1;
+    &:before {
+      content: url("../assets/icon-paid.svg");
+      position: absolute;
+      top: -33px;
+    }
   }
   &__body {
     margin-top: 1.2rem;
