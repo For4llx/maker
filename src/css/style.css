@@ -23,7 +23,7 @@ button {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Tablet.jpg");
+  background-image: url("../assets/layout/Mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
@@ -448,6 +448,23 @@ body {
   .layout-3__plan {
     width: 83%;
     margin-bottom: 4.1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .layout-3 {
+    margin-top: 5.3rem;
+    width: 87%;
+  }
+  .layout-3__plan {
+    width: 100%;
+    padding-bottom: 1.38rem;
+    padding-left: 1.9rem;
+    padding-right: 1.6rem;
+  }
+  .layout-3__plan--small {
+    padding-left: 1.8rem;
+    padding-top: 3.05rem;
+    padding-bottom: 1.3rem;
   }
 }
 
