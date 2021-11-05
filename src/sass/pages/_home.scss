@@ -137,6 +137,7 @@
       display: block;
       height: 10.2rem;
       width: 63%;
+      max-width: 10rem;
       border-radius: 3rem;
       background-color: $primary-color-2;
       background-repeat: no-repeat;
@@ -145,21 +146,25 @@
     &--passions-icon {
       &::before {
         background-image: url("../assets/illustration-passions.svg");
+        background-size: 54%;
       }
     }
     &--financial-icon {
       &::before {
         background-image: url("../assets/illustration-financial-freedom.svg");
+        background-size: 46%;
       }
     }
     &--lifestyle-icon {
       &::before {
         background-image: url("../assets/illustration-lifestyle.svg");
+        background-size: 49%;
       }
     }
     &--remote-icon {
       &::before {
         background-image: url("../assets/illustration-work-anywhere.svg");
+        background-size: 64%;
       }
     }
   }
@@ -187,27 +192,19 @@
         width: 23.5%;
         margin-bottom: 0;
       }
-      &--passions-icon {
-        &::before {
-          background-size: 54%;
-        }
-      }
       &--financial-icon {
         &::before {
           height: 7.7rem;
-          background-size: 46%;
         }
       }
       &--lifestyle-icon {
         &::before {
           height: 7.75rem;
-          background-size: 49%;
         }
       }
       &--remote-icon {
         &::before {
           height: 7.7rem;
-          background-size: 64%;
         }
       }
     }

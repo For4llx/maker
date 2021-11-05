@@ -23,7 +23,7 @@ button {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Tablet.jpg");
+  background-image: url("../assets/layout/Desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
@@ -235,6 +235,7 @@ body {
   display: block;
   height: 10.2rem;
   width: 63%;
+  max-width: 10rem;
   border-radius: 3rem;
   background-color: #093e67;
   background-repeat: no-repeat;
@@ -242,15 +243,19 @@ body {
 }
 .layout-2__paragraph--passions-icon::before {
   background-image: url("../assets/illustration-passions.svg");
+  background-size: 54%;
 }
 .layout-2__paragraph--financial-icon::before {
   background-image: url("../assets/illustration-financial-freedom.svg");
+  background-size: 46%;
 }
 .layout-2__paragraph--lifestyle-icon::before {
   background-image: url("../assets/illustration-lifestyle.svg");
+  background-size: 49%;
 }
 .layout-2__paragraph--remote-icon::before {
   background-image: url("../assets/illustration-work-anywhere.svg");
+  background-size: 64%;
 }
 @media screen and (max-width: 768px) {
   .layout-2 {
@@ -279,20 +284,14 @@ body {
     width: 23.5%;
     margin-bottom: 0;
   }
-  .layout-2__paragraph--passions-icon::before {
-    background-size: 54%;
-  }
   .layout-2__paragraph--financial-icon::before {
     height: 7.7rem;
-    background-size: 46%;
   }
   .layout-2__paragraph--lifestyle-icon::before {
     height: 7.75rem;
-    background-size: 49%;
   }
   .layout-2__paragraph--remote-icon::before {
     height: 7.7rem;
-    background-size: 64%;
   }
   .layout-2__container-1 {
     width: 66%;
