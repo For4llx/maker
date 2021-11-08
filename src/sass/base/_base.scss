@@ -18,13 +18,14 @@ a {
   text-decoration: none;
 }
 
-button {
+button,
+input {
   border: hidden;
 }
 
 body {
   background-color: $secondary-color-2;
-  background-image: url("../assets/layout/Mobile.jpg");
+  background-image: url("../assets/layout/Desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
