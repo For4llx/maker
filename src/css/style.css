@@ -28,7 +28,7 @@ input:focus {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Desktop.jpg");
+  background-image: url("../assets/layout/Tablet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
@@ -226,7 +226,17 @@ body {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 4.2rem;
+  }
+  .footer:before {
+    height: 9rem;
+    top: -15px;
+    left: -247px;
+    background-size: cover;
+  }
   .footer__title {
+    margin-bottom: 1.6rem;
     font-size: 24px;
   }
 }

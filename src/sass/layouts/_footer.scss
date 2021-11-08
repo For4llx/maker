@@ -62,7 +62,15 @@
     }
   }
   @include tablet {
+    margin-top: 4.2rem;
+    &:before {
+      height: 9rem;
+      top: -15px;
+      left: -247px;
+      background-size: cover;
+    }
     &__title {
+      margin-bottom: 1.6rem;
       font-size: 24px;
     }
   }
