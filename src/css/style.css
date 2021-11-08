@@ -28,10 +28,6 @@ input:focus {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.5;
 }
 
 .paragraph--centered {
