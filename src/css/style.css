@@ -21,6 +21,10 @@ button,
 input {
   border: hidden;
 }
+button:focus,
+input:focus {
+  outline: none;
+}
 
 body {
   background-color: #080c21;
@@ -199,6 +203,12 @@ body {
   font-size: 15px;
   line-height: 25px;
 }
+.footer__email:active {
+  border: solid 2px;
+  border-color: #3eeae7;
+  color: white;
+  background-color: #080c21;
+}
 .footer__button {
   width: 8.7rem;
   border-radius: 3rem;
@@ -207,6 +217,18 @@ body {
   color: #093e67;
   font-size: 15px;
   line-height: 25px;
+}
+.footer__button:hover {
+  border: solid 2px;
+  border-color: #3eeae7;
+  color: white;
+  background-color: #080c21;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .footer__title {
+    font-size: 24px;
+  }
 }
 
 .home {
