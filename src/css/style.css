@@ -28,7 +28,7 @@ input:focus {
 
 body {
   background-color: #080c21;
-  background-image: url("../assets/layout/Tablet.jpg");
+  background-image: url("../assets/layout/Mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
@@ -160,6 +160,7 @@ body {
 
 .footer {
   margin-top: 12.8rem;
+  margin-bottom: 10rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -187,12 +188,12 @@ body {
   line-height: 40px;
 }
 .footer__form {
-  height: 3rem;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 .footer__email {
+  height: 3rem;
   width: 20rem;
   margin-right: 1rem;
   border-radius: 3rem;
@@ -210,6 +211,7 @@ body {
   background-color: #080c21;
 }
 .footer__button {
+  height: 3rem;
   width: 8.7rem;
   border-radius: 3rem;
   background-color: #3eeae7;
@@ -238,6 +240,34 @@ body {
   .footer__title {
     margin-bottom: 1.6rem;
     font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    margin-top: 4.8rem;
+  }
+  .footer::before {
+    height: 5rem;
+    top: 0px;
+    left: 0px;
+  }
+  .footer__title {
+    text-align: center;
+    width: 65%;
+    margin-bottom: 1.3rem;
+  }
+  .footer__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__email {
+    margin-bottom: 1.5rem;
+    padding-left: 1.1rem;
+    width: 87%;
+    margin-right: 0;
+  }
+  .footer__button {
+    width: 87%;
   }
 }
 
