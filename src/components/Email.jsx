@@ -10,6 +10,7 @@ class Email extends React.Component {
       errorMessage: "",
     };
     this.handleEmail = this.handleEmail.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleEmail(onChange) {
@@ -18,19 +19,38 @@ class Email extends React.Component {
     });
     if (!regexEmail.test(onChange.target.value)) {
       this.setState({
-        errorField: "form--error",
+        errorField: "form__field--error",
         errorMessage: "form__error--display",
+      });
+    }
+    if (
+      onChange.target.value === "" ||
+      regexEmail.test(onChange.target.value)
+    ) {
+      this.setState({
+        errorField: "",
+        errorMessage: "",
+      });
+    }
+  }
+  handleSubmit(onSubmit) {
+    onSubmit.preventDefault();
+    if (regexEmail.test(this.state.email)) {
+      const data = JSON.stringify(this.state.email);
+      console.log(data);
+      this.setState({
+        email: "",
       });
     }
   }
 
   render() {
     return (
-      <form className="footer__form">
+      <form className="footer__form" onSubmit={this.handleSubmit}>
         <div className="form__container">
           <input
             type="text"
-            className={`footer__email ${this.state.errorField}`}
+            className={`form__field footer__field  ${this.state.errorField}`}
             placeholder="Email address"
             value={this.state.email}
             onChange={this.handleEmail}
